@@ -19,33 +19,31 @@ public static void main(String[] args) {
 
         try (Scanner scanner = new Scanner(System.in)) {
 
-     System.out.println("######################################");
+               System.out.println("######################################");
         
      System.out.println(" Registration and Login Application");
             System.out.println("######################################");
 
             System.out.println("\n--- Registration ---");
 
-            String firstName = readInput(scanner, "Enter your first name: ");
+ String firstName = readInput(scanner, "Enter your first name: ");
             String lastName = readInput(scanner, "Enter your last name: ");
-            String username = readInput(scanner, "Enter a username: ");
-            String password = readInput(scanner, "Enter a password: ");
+           
+           String username = readInput(scanner, "Enter a username: ");
+     String password = readInput(scanner, "Enter a password: ");
             String cellPhone = readInput(scanner,
                     "Enter your cellphone number, for example +27838968976: ");
 
             Login user = new Login(
-                  firstName,
+                  firstName,  
+                      lastName,
+       username,
+                      password,
                     
-                   lastName,
-                    
-                    username,
-                    
-                    password,
-                    
-                    cellPhone
+                   cellPhone
             );
 
-            String registrationMessage = user.registerUser();
+       String registrationMessage = user.registerUser();
 
             if (user.isRegistered()) {
      System.out.println("\nUsername successfully captured.");
