@@ -1,0 +1,21 @@
+/target/
+# Maven build output
+target/
+
+# NetBeans private user settings
+nbproject/private/
+
+# NetBeans build output
+build/
+dist/
+
+# Compiled Java files
+*.class
+
+# IDE settings
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
