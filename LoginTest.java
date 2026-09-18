@@ -23,11 +23,11 @@ public class LoginTest {
 
                private Login createValidUser() {
         return new Login(
-  "Kyle",
-        "Smith",
-  "kyl_1",
-                "Ch&&sec@ke99!",
-        "+27838968976"
+  "Yonela",
+        "Cokoto",
+  "yonz_20",
+                "YNL@tt15",
+        "+27707421532"
         );
     }
 
@@ -40,7 +40,7 @@ public class LoginTest {
            public void invalidUsernameShouldBeRejected() {
         
                Login user = createValidUser();
-        user.setUsername("kyle!!!!!!");
+        user.setUsername("ikechitheXhogerian");
 
            assertFalse(user.checkUserName());
     }
@@ -70,7 +70,7 @@ Login user = createValidUser();
     
     public void invalidCellPhoneShouldBeRejected() {
         Login user = createValidUser();
-        user.setCellPhone("08966553");
+        user.setCellPhone("0707421532");
 
         assertFalse(user.checkCellPhoneNumber());
     }
@@ -90,7 +90,7 @@ Login user = createValidUser();
     
     public void invalidUsernameShouldReturnCorrectRegistrationMessage() {
         Login user = createValidUser();
-        user.setUsername("kyle!!!!!!");
+        user.setUsername("ikechitheXhogerian");
 
         assertEquals(
                 "Username is not correctly formatted; please ensure that your "
@@ -122,7 +122,7 @@ Login user = createValidUser();
 
     public void invalidCellPhoneShouldReturnCorrectRegistrationMessage() {
         Login user = createValidUser();
-        user.setCellPhone("08966553");
+        user.setCellPhone("0707421532");
 
         assertEquals(
                 "Cell phone number is incorrectly formatted or does not contain "
@@ -138,8 +138,8 @@ Login user = createValidUser();
         Login user = createValidUser();
 
         assertTrue(user.loginUser(
-                "kyl_1",
-                "Ch&&sec@ke99!"
+                "yonz_20",
+                "YNL@tt15"
         ));
     }
 
@@ -160,13 +160,13 @@ Login user = createValidUser();
 
         boolean loginResult = user.loginUser(
               
-            "kyl_1",
-                "Ch&&sec@ke99!"
+            "yonz_20",
+                "YNL@tt15"
         );
 
         assertEquals(
                
-            "Welcome Kyle, Smith it is great to see you again.",
+            "Welcome Yonela, Cokoto it is great to see you again.",
                 user.returnLoginStatus(loginResult)
         );
     }
