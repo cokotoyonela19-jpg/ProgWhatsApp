@@ -60,3 +60,8 @@ The application entry point (`exec.mainClass` in `pom.xml`).
 
 ```xml
 <exec.mainClass>com.mycompany.progwhatsapp.ProgWhatsApp</exec.mainClass>
+mvn clean compile
+mvn clean compile
+mvn exec:java -Dexec.mainClass=com.mycompany.progwhatsapp.ProgWhatsApp
+mvn package
+# Output: target/ProgWhatsApp-1.0-SNAPSHOT.jar
