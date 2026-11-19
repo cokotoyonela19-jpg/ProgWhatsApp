@@ -1,0 +1,22 @@
+[
+  {
+    "Recipient": "+27838884567",
+    "Message": "Where are you? You are late! I have asked you to be on time.",
+    "Flag": "Stored"
+  },
+  {
+    "Recipient": "+27834484567",
+    "Message": "Yohoooo, I am at your gate.",
+    "Flag": "Disregard"
+  },
+  {
+    "Recipient": "0838884567",
+    "Message": "It is dinner time !",
+    "Flag": "Sent"
+  },
+  {
+    "Recipient": "+27838884567",
+    "Message": "Ok, I am leaving without you.",
+    "Flag": "Stored"
+  }
+]
